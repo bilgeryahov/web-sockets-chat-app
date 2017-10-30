@@ -22,4 +22,9 @@ io.on('connection', function (socketInstance) {
 
 	console.log('Made socket connection.');
 	console.log(socketInstance.id);
+
+	socketInstance.on('chat', function (data) {
+
+		io.sockets.emit('chat', data);
+	});
 });

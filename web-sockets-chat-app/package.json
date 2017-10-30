@@ -1,0 +1,25 @@
+{
+  "name": "web-sockets-chat-app",
+  "version": "1.0.0",
+  "description": "Chat app made with web sockets.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bilgeryahov/web-sockets-chat-app.git"
+  },
+  "keywords": [
+    "Web",
+    "Sockets",
+    "Chat",
+    "App"
+  ],
+  "author": "Bilger Yahov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bilgeryahov/web-sockets-chat-app/issues"
+  },
+  "homepage": "https://github.com/bilgeryahov/web-sockets-chat-app#readme"
+}

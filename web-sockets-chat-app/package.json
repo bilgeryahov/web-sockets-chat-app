@@ -21,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/bilgeryahov/web-sockets-chat-app/issues"
   },
-  "homepage": "https://github.com/bilgeryahov/web-sockets-chat-app#readme"
+  "homepage": "https://github.com/bilgeryahov/web-sockets-chat-app#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
 }

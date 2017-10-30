@@ -21,4 +21,5 @@ const io = socket(server);
 io.on('connection', function (socketInstance) {
 
 	console.log('Made socket connection.');
+	console.log(socketInstance.id);
 });

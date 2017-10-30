@@ -9,6 +9,7 @@ const message = document.getElementById('message');
 const handle = document.getElementById('handle');
 const btn = document.getElementById('send');
 const output = document.getElementById('output');
+const feedback = document.getElementById('feedback');
 
 // Emit events
 btn.addEventListener('click', function () {
@@ -19,8 +20,19 @@ btn.addEventListener('click', function () {
 	});
 });
 
+message.addEventListener('keypress', function () {
+
+	socket.emit('typing', handle.value);
+});
+
 // Listen for events.
 socket.on('chat', function (data) {
 
+	feedback.innerHTML = '';
 	output.innerHTML += `<p><strong>${data.handle}: </strong>${data.message}</p>`;
+});
+
+socket.on('typing', function (data) {
+
+	feedback.innerHTML = `<p><strong>${data} </strong>is typing a message...</p>`;
 });
